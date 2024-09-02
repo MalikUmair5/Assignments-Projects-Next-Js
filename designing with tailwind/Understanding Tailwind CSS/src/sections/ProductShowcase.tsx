@@ -7,14 +7,12 @@ export const ProductShowcase = () => {
   return (
     <section className="overflow-x-clip bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24">
       <div className="container">
-        <div className="max-w-[540px] mx-auto">
+        <div className="section-heading">
           <div className="flex justify-center">
             <div className="tag">Boost Your Productivity</div>
           </div>
-          <h2 className="md:text-[54px] md:leading-[60px] text-center text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to to-[#001E80] text-transparent bg-clip-text">
-            A more effective to track Progress
-          </h2>
-          <p className="text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5">
+          <h2 className="section-title">A more effective to track Progress</h2>
+          <p className="section-description">
             Effortlessly turn your Idea into fully functional responsive SaaS
             Website in just minutes with this tempelate
           </p>

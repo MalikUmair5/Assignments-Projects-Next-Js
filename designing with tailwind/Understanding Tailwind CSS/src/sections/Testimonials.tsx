@@ -7,6 +7,8 @@ import avatar6 from "@/assets/avatar-6.png";
 import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
+import Image from "next/image";
+import TestimonialContainer from "@/components/TestimonialContainer";
 
 const testimonials = [
   {
@@ -65,6 +67,33 @@ const testimonials = [
   },
 ];
 
+const firstCol = testimonials.slice(0, 3);
+const secondCol = testimonials.slice(3, 6);
+const thirdCol = testimonials.slice(6, 9);
+
 export const Testimonials = () => {
-  return null;
+  return (
+    <section className="bg-white">
+      <div className="container">
+        <div className="flex justify-center">
+          <div className="tag">Testimonials</div>
+        </div>
+        <div className="section-heading">
+          <h2 className="section-title mt-5">What our yours say</h2>
+          <p className="section-description mt-5  ">
+            From intuitive design to powerful features, our App has become an
+            essential tool for users around the world.
+          </p>
+        </div>
+        <div className="flex justify-center gap-5 items-end">
+          <TestimonialContainer column={firstCol} />
+          <TestimonialContainer uiClass="hidden md:block" column={secondCol} />
+          <TestimonialContainer
+            uiClass="hidden md:hidden lg:block"
+            column={thirdCol}
+          />
+        </div>
+      </div>
+    </section>
+  );
 };

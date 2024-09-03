@@ -29,7 +29,10 @@
   .section-description {
     @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5;
   }
-  .section-heading{
-    @apply max-w-[540px] mx-auto 
+  .section-heading {
+    @apply max-w-[540px] mx-auto;
+  }
+  .card {
+    @apply max-w-xs p-10 border rounded-3xl shadow-[0_7px_14px_#EAEAEA];
   }
 }
